@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="customerScreen" template="/WEB-INF/layout/baseCustomer.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="" />
+        <put-attribute name="content" value="" />
+    </definition>
+
+    <definition name="dangKyLichKham" extends="customerScreen">
+        <put-attribute name="title" value="Đăng ký lịch khám" />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarMain.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/dangKyLichKham.jsp" />
+    </definition>
+
+    <definition name="ketQuaKham" extends="customerScreen">
+        <put-attribute name="title" value="Kết quả khám bệnh" />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarMain.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/ketQuaKham.jsp" />
+    </definition>
+
+    <definition name="productManager" extends="customerScreen">
+        <put-attribute name="title" value="Quản lý sản phẩm" />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarAdmin.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/productManager.jsp" />
+    </definition>
+
+    <definition name="categoryManager" extends="customerScreen">
+        <put-attribute name="title" value="Quản lý loại sản phẩm" />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarAdmin.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/mainCategory.jsp" />
+    </definition>
+
+    <definition name="addCategory" extends="customerScreen">
+        <put-attribute name="title" value="Thêm loại sản phẩm" />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarAdmin.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/addCategory.jsp" />
+    </definition>
+
+    <definition name="editCategory" extends="customerScreen">
+        <put-attribute name="title" value="Sửa loại sản phẩm" />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarAdmin.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/editCategory.jsp" />
+    </definition>
+
+    <definition name="addMedicine" extends="customerScreen">
+        <put-attribute name="title" value="Thêm sản phẩm" />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarAdmin.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/addMedicine.jsp" />
+    </definition>
+
+    <definition name="dangKyList" extends="customerScreen">
+        <put-attribute name="title" value="Danh sách đăng ký khám bệnh" />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarAdmin.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/dangKyList.jsp" />
+    </definition>
+
+    <definition name="medicineManager" extends="customerScreen">
+        <put-attribute name="title" value="Quản lý thuốc than" />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarAdmin.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/medicineManager.jsp" />
+    </definition>
+
+    <definition name="dangKyDetail" extends="customerScreen">
+        <put-attribute name="title" value="Chi tiết đăng ký" />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarAdmin.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/dangKyDetail.jsp" />
+    </definition>
+
+    <definition name="khamBenhMain" extends="customerScreen">
+        <put-attribute name="title" value="Danh sách khám bệnh" />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarAdmin.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/khamBenhMain.jsp" />
+    </definition>
+
+    <definition name="khamBenhCt" extends="customerScreen">
+        <put-attribute name="title" value="Khám bệnh" />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarAdmin.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/khamBenhCt.jsp" />
+    </definition>
+
+    <definition name="pickMedicine" extends="customerScreen">
+        <put-attribute name="title" value="Chọn thuốc " />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarAdmin.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/pickMedicine.jsp" />
+    </definition>
+
+    <definition name="checkList" extends="customerScreen">
+        <put-attribute name="title" value="Danh sách thuốc đã chọn " />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarAdmin.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/checkList.jsp" />
+    </definition>
+
+    <definition name="ketQuaDetail" extends="customerScreen">
+        <put-attribute name="title" value="Kết quả khám bệnh " />
+        <put-attribute name="header" value="/WEB-INF/layout/navBarMain.jsp" />
+        <put-attribute name="content" value="/WEB-INF/jsp/ketQuaDetail.jsp" />
+    </definition>
+</tiles-definitions>
